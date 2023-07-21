@@ -547,10 +547,12 @@ align-items: center;
 .copyright p{
     color: #7e8080;
 }
-
-.menu{
-    border: 1px solid #fff;
-    border-radius: 1rem;
+#context-menu{
+    position: absolute;
+}
+#menu{
+    /* border: 1px solid #fff; */
+    border-radius: .2rem;
     width: 9rem;
     display: flex;
     flex-direction: column;
@@ -558,7 +560,7 @@ align-items: center;
     padding:1rem 0;
     box-shadow: 1px 1px 10px #fff;
 }
-.menu a{
+#menu a{
     /* background-color:#7e8080; */
     width: 100%;
     margin: 0;
@@ -567,7 +569,7 @@ align-items: center;
     font-size: 1.2rem;
     transition: .5s;
 }
-.menu :hover> a{
+#menu :hover> a{
     background-color:#fff;
     color: #7e8080;
 }
