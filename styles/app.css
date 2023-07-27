@@ -269,7 +269,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    transition: .s;
+    transition: .5s;
 }
 .nav{
     display: flex;
@@ -284,7 +284,7 @@ body {
     
 }
 .nav-logo img{
-    width: 5rem;
+    width: 4rem;
 }
 .menu{
     display: flex;
@@ -401,7 +401,7 @@ body {
 
 /* start main content work */
 .main .container{
-    height: 745px;
+    /* height: 745px; */
    padding: 3.5rem ;
 }
 
@@ -538,28 +538,63 @@ margin: 0;
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-}
-.newsletter{
     background-color: #1976D2;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.address{
+    width: 30%;
+    margin-left: 3rem;
+}
+.address div{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+}
+.social{
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+    justify-content: left;
+    align-items:left;
+    width: 20%;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+.contact-info img{
+    width: 2rem;
+    margin-right: .5rem;
+    
+}
+
+.newsletter{
+    width: 40%;
+    margin-right: 3rem;
+    /* background-color: #fff;  */
 
 }
 .newsletter-wrapper{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 1rem;
 }
 .newsletter-text{
     
 }
 .newsleter-email{
     background-color: #fff;
-    flex-basis: 18rem;
+    flex-basis: 3rem;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: .5rem;
+    width: 17rem;
 }
 .email{
     padding: 1rem;
@@ -568,7 +603,7 @@ margin: 0;
     outline: none;
 }
 .submit{
-    margin-right: .3rem;
+    margin-right: .1rem;
     height: 3rem;
     width: 4rem;
     border-radius: .6rem;
@@ -579,6 +614,7 @@ display: flex;
 justify-content: space-between;
 padding: 0 9rem;
 align-items: center;
+background-color: #fff;
 }
 .copyright p{
     color: #7e8080;
@@ -656,16 +692,19 @@ align-items: center;
     #about{
         width: 100%;
         display: flex;
-
-
+        
     }
+
     .header-content-left, .header-content-right{
         flex-basis: 100%;
-    }
-    .header-links{
-        /* justify-content: center;
-        align-content: center; */
         
+    }
+    .header-bottom{
+        padding-left: auto;
+        padding-right: auto;
+    } 
+    .nav-logo__img{
+        margin-top: .7rem;
     }
     .header-bottom{
         justify-content: center;
@@ -734,9 +773,15 @@ align-items: center;
         display: none;
 
     }
+   
+   
+    .social{
+        display: none;
+            }
 }
 @media only screen and (max-width: 576px) {
     .container {
         max-width: 100%;
     }
+  
 }
